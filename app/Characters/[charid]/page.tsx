@@ -25,7 +25,13 @@ export default async function Page({params} : {
   const r = await fetch(`https://rickandmortyapi.com/api/character/${params.charid}`).then(res => res.json());
 
   return (
+    
     <div>
+       <head> 
+        <title>Character</title>
+      </head>
+
+     
 
      <h2> {r.name} </h2>
     <img src={r.image} alt="" />
